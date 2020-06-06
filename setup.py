@@ -1,12 +1,13 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
 
 setup(
     name='pycalc',
+    description='pure command-line calculator',
     version='',
-    packages=[''],
-    url='',
-    license='',
-    author='Alexey Danilchyk',
-    author_email='danilchyck@gmail.com',
-    description='Python console calculator'
+    author='Alex',
+    packages=find_packages(),
+    entry_points={
+        'console_scripts': ['pycalc = calculator.pycalc:main']
+    }
 )
